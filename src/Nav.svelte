@@ -4,8 +4,8 @@
 <header>
   <nav class="nav">
     <a href="/">Home</a>
-    <a href="memes">Memes</a>
-    <a href="conspiracies">Conspiracies</a>
+    <a href="/memes">Memes</a>
+    <a href="/conspiracies">Conspiracies</a>
   </nav>
 </header>
 
