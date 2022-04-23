@@ -3,14 +3,12 @@
   const { memes } = Memes;
 </script>
 
+<svelte:head><title>Ryans Conspiracy Memes</title></svelte:head>
+
 <div class="memes">
-  <!-- <ul> -->
   {#each memes as meme}
-    <!-- <li> -->
     <img src={meme} alt="Ryan meme {meme}" />
-    <!-- </li> -->
   {/each}
-  <!-- </ul> -->
 </div>
 
 <style>
@@ -21,6 +19,7 @@
     grid-auto-flow: dense;
     margin: 3em;
   }
+
   .memes img {
     border-radius: 8px;
     box-shadow: 4px 4px 4px 4px;
