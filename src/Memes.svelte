@@ -4,24 +4,27 @@
 </script>
 
 <div class="memes">
+  <!-- <ul> -->
   {#each memes as meme}
-    <img src={meme} alt="Ryan meme {meme}" width="300" height="400" />
+    <!-- <li> -->
+    <img src={meme} alt="Ryan meme {meme}" />
+    <!-- </li> -->
   {/each}
+  <!-- </ul> -->
 </div>
 
 <style>
   .memes {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3em;
+    grid-auto-flow: dense;
+    margin: 3em;
   }
-
-  .memes > img {
-    margin: 2em;
+  .memes img {
     border-radius: 8px;
     box-shadow: 4px 4px 4px 4px;
-  }
-
-  .memes > img:hover {
-    scale: 1.2;
+    width: 100%;
+    object-fit: contain;
   }
 </style>
