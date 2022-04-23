@@ -4,7 +4,8 @@
   import Nav from "./Nav.svelte";
   import Home from "./Home.svelte";
   import Conspiracies from "./Conspiracies.svelte";
-  import Conspiracy from "./Conspiracies/Conspiracy.svelte";
+  import Conspiracy from "./Conspiracy.svelte";
+  import Memes from "./Memes.svelte";
 </script>
 
 <Router>
@@ -15,7 +16,9 @@
       <Home />
     </Route>
 
-    <Route path="memes" />
+    <Route path="memes">
+      <Memes />
+    </Route>
     <Route path="conspiracies/*">
       <Route path="/">
         <Conspiracies />

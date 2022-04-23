@@ -1,13 +1,7 @@
 <script lang="ts">
-  interface Conspiracy {
-    id: string;
-    title: string;
-    conspiracy: string;
-  }
+  import * as Conspiracies from "./Conspiracies.json";
 
-  import * as Conspiracies from "./Conspiracies/Conspiracies.json";
-
-  const conspiracies = Conspiracies.conspiracies as Conspiracy[];
+  const { conspiracies } = Conspiracies;
 </script>
 
 <ol>

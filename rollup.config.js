@@ -83,6 +83,7 @@ export default {
     production && terser(),
     json({
       compact: true,
+      preferConst: true,
     }),
   ],
   watch: {
